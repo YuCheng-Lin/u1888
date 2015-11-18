@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>后端管理系统</title>
+</head>
+<body>
+	<form id="dataForm" action="request.php" class="form-horizontal" role="form" method="post">
+	  <div class="form-group">
+	    <label for="admin_acc" class="col-sm-2 control-label"><!--__Lang_LoginAccount__--></label>
+	    <div class="col-sm-10"><!--__admin_acc__--></div>
+	  </div>
+	  <div class="form-group">
+	    <label for="admin_pwd" class="col-sm-2 control-label"><!--__Lang_LoginPassword__--></label>
+	    <div class="col-sm-10">
+	    	<input style="display:none;" type="password" class="form-control" id="admin_pwd" name="admin_pwd" placeholder="<!--__Lang_ERRPassword__-->">
+	    	<button type="button" class="btn btn-primary updPwdBtn"><!--__Lang_UpdatePwdBtn__--></button>
+	    </div>
+	  </div>
+	  <div class="form-group" style="display:none;">
+	    <label for="admin_pwd2" class="col-sm-2 control-label"><!--__Lang_ConfirmPassword__--></label>
+	    <div class="col-sm-10">
+	    	<input type="password" class="form-control" id="admin_pwd2" name="admin_pwd2" placeholder="<!--__Lang_ERRPassword2__-->">
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label for="admin_name" class="col-sm-2 control-label"><!--__Lang_THMemName__--></label>
+	    <div class="col-sm-10">
+	    	<input type="text" value="<!--__admin_name__-->" class="form-control" id="admin_name" name="admin_name" placeholder="<!--__Lang_ERRNickName__-->">
+	    </div>
+	  </div>
+	  <!--__upAdminData__-->
+	  <!--__upAdminDataStart
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label">__UpAccount__</label>
+	    <div class="col-sm-10">__upAdmin_acc__</div>
+	  </div>
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label">__UpCommissionRate__</label>
+	    <div class="col-sm-10">__upCommissionRate__%</div>
+	  </div>
+	  upAdminDataEnd__-->
+	  <!--__commission__-->
+	  <!--__OnlycommissionStart
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label" for="commission">__Lang_CommissionRate__</label>
+	    <div class="col-sm-10">__commissionRate__%</div>
+	  </div>
+	  OnlycommissionEnd__-->
+	  <!--__commissionStart
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label" for="date">__Lang_NextDateSetting__</label>
+	    <div class="col-sm-10">__date__</div>
+	  </div>
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label" for="commission">__Lang_CommissionRate__</label>
+	    <div class="col-sm-10">
+			<div class="input-group">
+				<input type="text" value="__commissionRate__" class="form-control" id="commissionRate" name="commissionRate" placeholder="__Lang_ERRCommissionRate__">
+				<div class="input-group-addon">%</div>
+			</div>
+	    </div>
+	  </div>
+	  commissionEnd__-->
+
+		<!--__canAddAgentTemp__-->
+		<!--__canAddAgentStart
+		<div class="form-group">
+		  <div class="col-sm-offset-2 col-sm-10">
+		    <div class="checkbox">
+		      <label>
+		        <input type="checkbox" value="y" __checked__ name="canAddAgent"> __Lang_CanAddAgent__
+		      </label>
+		    </div>
+		  </div>
+		</div>
+		canAddAgentEnd__-->
+		<!--__allowLoginIpTemp__-->
+		<!--__allowIpStart
+		<div class="form-group">
+			<label class="col-sm-2 control-label" for="points">IP</label>
+			<div class="col-sm-10">
+				<textarea class="form-control" name="ip" placeholder="192.168.1.1,168.95.1.1">__allowLoginIp__</textarea>
+			</div>
+		</div>
+		allowIpEnd__-->
+		<button type="submit" name="btnSubmit" class="hidden">Submit</button>
+	</form>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+<div class="panel panel-default">
+  <div class="panel-body">
+	<form class="form-inline" role="form" id="searchForm">
+		<div class="form-group">
+			<label><!--__Lang_DateRange__-->：</label>
+			<div class="input-group">
+	    		<input type="text" name="date_timepicker_start" id="date_timepicker_start" class="form-control" data-mindate="<!--__p3M__-->" data-maxdate="<!--__setdate_nowD_to__-->" value="<!--__start_time__-->" placeholder="<!--__Lang_DateDefault__-->" />
+	    		<div class="input-group-addon">～</div>
+	    		<input type="text" name="date_timepicker_end" id="date_timepicker_end" class="form-control" data-mindate="<!--__p3M__-->" data-maxdate="<!--__setdate_nowD_to__-->" value="<!--__end_time__-->" />
+	    	</div>
+		  <div class="btn-group">
+			  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+			  	<!--__Lang_DateSelect__--><span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu">
+			  	<li><a href="javascript:;" class="setdate" data-setdatefrom="<!--__setdate_nowD_from__-->" data-setdateto="<!--__setdate_nowD_to__-->" ><!--__Lang_DateToday__--></a></li>
+			  	<li><a href="javascript:;" class="setdate" data-setdatefrom="<!--__setdate_YD_from__-->" data-setdateto="<!--__setdate_YD_to__-->" ><!--__Lang_DateLastDay__--></a></li>
+			  	<li><a href="javascript:;" class="setdate" data-setdatefrom="<!--__setdate_nowW_from__-->" data-setdateto="<!--__setdate_nowW_to__-->" ><!--__Lang_DateLastWeek__--></a></li>
+			  	<li><a href="javascript:;" class="setdate" data-setdatefrom="<!--__setdate_p1M_from__-->" data-setdateto="<!--__setdate_p1M_to__-->" ><!--__Lang_DateLastMonth__--></a></li>
+			  </ul>
+		  </div>
+		</div>
+		<button type="submit" class="btn btn-default"><!--__Lang_SearchBtn__--></button>
+		<!--__goBackMine__-->
+	</form>
+  </div>
+</div>
+<table class="table table-bordered table-hover">
+	<thead>
+		<tr>
+			<th><!--__Lang_GameTHId__--></th>
+			<th><!--__Lang_GameTHTitle__--></th>
+			<th><!--__Lang_GameTHType__--></th>
+			<th style="width: 23%;"><!--__Lang_GameTHRate__--></th>
+			<th><!--__Lang_THBetCount__--></th>
+			<th><!--__Lang_THBetTotal__--></th>
+			<th><!--__Lang_THWinLoseTotal__--></th>
+			<th><!--__Lang_THOperation__--></th>
+		</tr>
+	</thead>
+	<tbody>
+		<!--__tableRow__-->
+		<!--__tableRowStart
+		<tr>
+			<td>__GameID__</td>
+			<td>__GameTitle__</td>
+			<td>__GameType__</td>
+			<td>__GameRateTemp__</td>
+			<td>__Count__</td>
+			<td>__Bet__</td>
+			<td>__WinLose__</td>
+			<td>__btn__</td>
+		</tr>
+		tableRowEnd__-->
+	</tbody>
+</table>
+<!--__paginationStart
+<ul class="pagination" style="margin: 0px;">__pagination__</ul>
+paginationEnd__-->
+<div>
+	<!--__pagination__-->
+	<div class="pages text-muted pull-right" style="padding: 6px 0;"><!--__RecordInfo__--></div>
+</div>
+<!--__notice__-->
+
+<!--__formStart
+<form action="request.php" class="form-inline" method="post">
+	<div class="form-group form-group-sm">
+		<div class="input-group">
+			<input type="text" id="GameRate" name="GameRate" class="form-control input-sm required number" value="__GameRate__" />
+	    	<div class="input-group-addon">%</div>
+		</div>
+	</div>
+	<input type="hidden" name="id" value="__GameID__" />
+	<input type="hidden" name="action" value="updGameRate" />
+	<button type="submit" class="btn btn-sm btn-primary confirm">__ConfirmBtn__</button>
+</form>
+formEnd__-->
+</body>
+</html>

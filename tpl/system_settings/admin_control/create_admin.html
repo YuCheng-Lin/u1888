@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>幸运星后端管理系统</title>
+	
+    <link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
+	<link rel="Stylesheet" type="text/css" href="/css/smoothness/jquery-ui-1.8.7.custom.css"  />	
+	<!--[if IE 7]><link rel="stylesheet" href="/css/ie.css" type="text/css" media="screen, projection" /><![endif]-->
+	<!--[if IE 6]><link rel="stylesheet" href="/css/ie6.css" type="text/css" media="screen, projection" /><![endif]-->
+	<!-- JavaScript -->
+    <script type="text/javascript" src="/js/jquery-1.4.4.min.js"> </script>
+	<script type="text/javascript" src="/js/jquery-ui-1.8.7.custom.min.js"> </script>
+	<script type="text/javascript" src="/js/superfish.js"> </script>
+  	<script type="text/javascript" src="/js/custom.js"> </script>
+
+</head>
+<body>
+	
+	<form action="/system_settings/admin_control/admin_request.php" method="post" id="adminForm">
+		<table class="table" style="width:100%;">
+				<thead>
+				<tr>
+					<th>项目</th>
+					<th style="width:80%;">内容</th>
+				</tr>
+				</thead>
+				<tbody>
+					
+					<!--__tableContent__-->
+					
+					<!--__tableData_Start
+					<tr>
+						<td>帐号状态</td>
+						<td class="star">
+							<label style="width:80px;"><input type="radio" class="validate[required]" name="admin_enable" id="admin_enable_y" class="noborder" value="y" checked="checked" />启用<img src="/img/accpet.png" alt="启用" title="启用"/></label>
+							<label style="width:80px;"><input type="radio" class="validate[required]" name="admin_enable" id="admin_enable_n" class="noborder" value="n" />停用<img src="/img/cross_circle.png" alt="停用" title="停用"/></label>
+						</td>
+					</tr>
+					
+					<tr>
+						<td>帐号</td>
+						<td class="star">
+							<input class="text-input validate[required,custom[onlyLetterNumber],minSize[4],maxSize[16],ajax[ajaxUserCall]]" name="admin_acc" id="admin_acc" type="text" value="" size="50" />
+						</td>
+					</tr>
+					
+					<tr>
+						<td>密码</td>
+						<td class="star"><input class="text-input validate[required,custom[onlyLetterNumber],minSize[6],maxSize[16]]" name="admin_pwd" id="admin_pwd" type="password" value="" size="50" /></td>
+					</tr>
+					
+					<tr>
+						<td>密码确认</td>
+						<td class="star"><input class="text-input validate[required,equals[admin_pwd]]" name="admin_pwd2" id="admin_pwd2" type="password" value="" size="50" /></td>
+					</tr>
+					
+					<tr>
+						<td>身份证后四码</td>
+						<td class="star"><input class="text-input validate[required,custom[onlyNumberSp],long[4]]" name="admin_id_last4" id="admin_id_last4" type="password" value="" size="50" /></td>
+					</tr>
+					
+					<tr>
+						<td>部门</td>
+						<td class="star">__ag_title__</td>
+					</tr>
+					
+					<tr>
+						<td>职称</td>
+						<td class="star"><input class="text-input validate[required]" name="admin_title" id="admin_title" type="text" value="" size="50" /></td>
+					</tr>
+					
+					<tr>
+						<td>姓名</td>
+						<td class="star"><input class="text-input validate[required]" name="admin_name" id="admin_name" type="text" value="" size="50" /></td>
+					</tr>
+					
+					<tr>
+						<td>电话</td>
+						<td class="star"><input class="text-input validate[required,long[10],custom[phone]]" name="admin_phone" id="admin_phone" type="text" value="" size="50" /></td>
+					</tr>
+					
+					<tr>
+						<td>信箱</td>
+						<td><input class="text-input validate[custom[email]]" name="admin_mail" id="admin_mail" type="text" value="" size="50" /></td>
+					</tr>
+					
+					<tr>
+						<td>系统权限</td>
+						<td class="star">__admin_power__</td>
+					</tr>
+					tableData_End__-->
+					
+				</tbody>
+				
+			</table>
+		</form>
+	
+	
+	
+</body>
+</html>

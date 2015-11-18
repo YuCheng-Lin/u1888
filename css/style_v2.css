@@ -1,0 +1,89 @@
+body {
+	background: url("../img/bg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+	font-family: "蘋果儷中黑","微軟正黑體";
+	font-size: 15px;
+}
+#container {
+	min-width: 960px;
+	width: 100%;
+	padding: 0;
+}
+.section {
+	background: none repeat scroll 0 0 #fff;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+	padding: 10px;
+	margin: 10px auto;
+}
+/**
+ * 上方Menu修正區
+ */
+.navbar {
+	margin-bottom: 0px;
+}
+.navbar-default .navbar-brand {
+	color: #9d9d9d;
+    font-size: 17px !important;
+    padding-top: 10px;
+}
+
+/**
+ * 內容修正區
+ */
+.ico_mug {
+    background: none repeat scroll 0 0 #f1f1f1;
+    height: 45px;
+    margin-bottom: 10px;
+}
+ .ico_mug h2 {
+	display: inline-block;
+	font-family: "蘋果儷中黑","微軟正黑體";
+	font-size: 1.5em;
+    margin: 0;
+    padding: 8px;
+}
+ .ico_mug a, .ico_mug a:hover, .ico_mug button, .ico_mug input[type="button"] {
+	margin: 5px 0 0 8px;
+}
+
+.table th {
+	background: none repeat scroll 0 0 #eee;
+}
+
+/**
+ * Form表單驗證alert修正
+ */
+.alert {
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+.modal-dialog {
+    margin: 30px auto;
+    width: 780px;
+}
+/**
+ * datatable
+ */
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc_disabled,
+table.dataTable thead .sorting_desc_disabled {
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+table.dataTable thead .sorting {
+  background-image: url("/img/sort_both.png");
+}
+table.dataTable thead .sorting_asc {
+  background-image: url("/img/sort_asc.png");
+}
+table.dataTable thead .sorting_desc {
+  background-image: url("/img/sort_desc.png");
+}
+table.dataTable thead .sorting_asc_disabled {
+  background-image: url("/img/sort_asc_disabled.png");
+}
+table.dataTable thead .sorting_desc_disabled {
+  background-image: url("/img/sort_desc_disabled.png");
+}

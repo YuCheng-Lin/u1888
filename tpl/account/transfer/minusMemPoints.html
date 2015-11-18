@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>后端管理系统</title>
+</head>
+<body>
+	<form id="dataForm" action="request.php" class="form-horizontal" role="form" method="post">
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label"><!--__Lang_MinusAccount__--></label>
+	    <div class="col-sm-10"><!--__MemberAccount__--></div>
+	  </div>
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label"><!--__Lang_THAccountBalance__--></label>
+	    <div class="col-sm-10"><!--__Points__--></div>
+	  </div>
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label" for="points"><!--__Lang_MinusPoints__--></label>
+	    <div class="col-sm-10">
+			<div class="input-group">
+				<div class="input-group-addon">$</div>
+				<input type="text" autocomplete="off" class="form-control" id="points" name="points" placeholder="<!--__Lang_ERRMinusPoints__-->">
+			</div>
+			<div class="calculate label label-default"></div>
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label"><!--__Lang_THCurrencyTitle__--></label>
+	    <div class="col-sm-10"><!--__title__--></div>
+	  </div>
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label"><!--__Lang_THCurrencyRate__--></label>
+	    <div class="col-sm-10 CurrencyRate"><!--__rate__--></div>
+	  </div>
+	  <div class="form-group">
+	    <label for="note" class="col-sm-2 control-label"><!--__Lang_Note__--></label>
+	    <div class="col-sm-10">
+	    	<input type="text" class="form-control" id="note" name="note" placeholder="<!--__Lang_Note__-->">
+	    </div>
+	  </div>
+	  <button type="submit" name="btnSubmit" class="hidden">Submit</button>
+	</form>
+</body>
+</html>

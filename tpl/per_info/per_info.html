@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+<table class="table table-bordered table-hover">
+	<thead>
+		<tr>
+			<th><!--__Lang_THItem__--></th>
+			<th style="width:60%;"><!--__Lang_THContent__--></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><!--__Lang_THMemName__--></td>
+			<td>
+				<form class="updateNick hidden" action="update_name.php" method="post">
+					<div class="form-group">
+	                    <div class="col-xs-4">
+	                    	<input type="text" name="admin_name" required placeholder="Nickname" id="admin_name" class="form-control" value="<!--__admin_name__-->">
+	                    </div>
+                    	<button name="btnSubmit" class="btn btn-primary chkNickBtn" type="submit"><!--__Lang_ConfirmUpdBtn__--></button>
+                  	</div>
+              	</form>
+              	<div>
+					<span><!--__admin_name__--></span>
+					<button class="btn btn-xs btn-default updateNickBtn" type="button"><!--__Lang_UpdateNameBtn__--></button>
+              	</div>
+			</td>
+		</tr>
+		<tr>
+			<td><!--__Lang_PH_ACC__--></td>
+			<td><!--__admin_acc__--></td>
+		</tr>
+		
+		<tr>
+			<td><!--__Lang_PH_PWD__--></td>
+			<td>
+				<form class="updatePwd hidden" action="update_self.php" method="post">
+					<div class="form-group">
+	                    <div class="col-xs-4">
+	                    	<input type="password" name="admin_pwd" required placeholder="Password" id="inputPassword" class="form-control">
+	                    </div>
+                    	<button name="btnSubmit" class="btn btn-primary" type="submit"><!--__Lang_ConfirmUpdBtn__--></button>
+            			<span class="text-danger">----- <!--__Lang_AlertReLogin__--> -----</span>
+                  	</div>
+              	</form>
+              	<button class="btn btn-xs btn-default updatePwdBtn" type="button"><!--__Lang_UpdatePwdBtn__--></button>
+            </td>
+		</tr>
+		<tr>
+			<td><!--__Lang_THAccountBalance__--></td>
+			<td><!--__points__--></td>
+		</tr>
+		<!--__commissionTemp__-->
+		<!--__commissionStart<tr>
+			<td>__THCommissionRate__</td>
+			<td>__commissionRate__%</td>
+		</tr>commissionEnd__-->
+		<tr>
+			<td><!--__Lang_THAgentTotal__--></td>
+			<td><!--__downCount__--></td>
+		</tr>
+		<tr>
+			<td><!--__Lang_THMemTotal__--></td>
+			<td><!--__downMemCount__--></td>
+		</tr>
+		<tr>
+			<td><!--__Lang_THBelongGroup__--></td>
+			<td><!--__ag_title__--></td>
+		</tr>
+		<tr>
+			<td><!--__Lang_THLastLoginDate__--></td>
+			<td><!--__admin_last_login_time__--></td>
+		</tr>
+		<tr>
+			<td><!--__Lang_THRegisterTime__--></td>
+			<td><!--__admin_addtime__--></td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>

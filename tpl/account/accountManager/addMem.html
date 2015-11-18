@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>后端管理系统</title>
+</head>
+<body>
+	<form id="dataForm" action="request.php" class="form-horizontal" role="form" method="post">
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label"><!--__Lang_UpAccount__--></label>
+	    <div class="col-sm-10"><!--__upAccount__--></div>
+	  </div>
+		<!--__upAccountStart
+			<input type="text" id="upAccount" name="upAccount" placeholder="__Lang_ERRUpAccount__" class="form-control" />
+		upAccountEnd__-->
+	  <div class="form-group">
+	    <label for="MemberAccount" class="col-sm-2 control-label"><!--__Lang_LoginAccount__--></label>
+	    <div class="col-sm-10">
+	      <input type="text" class="form-control" id="MemberAccount" name="MemberAccount" placeholder="<!--__Lang_ERRAccount__-->">
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label for="MemberPassword" class="col-sm-2 control-label"><!--__Lang_LoginPassword__--></label>
+	    <div class="col-sm-10">
+	      <input type="password" class="form-control" id="MemberPassword" name="MemberPassword" placeholder="<!--__Lang_ERRPassword__-->">
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label for="MemberPassword2" class="col-sm-2 control-label"><!--__Lang_ConfirmPassword__--></label>
+	    <div class="col-sm-10">
+	      <input type="password" class="form-control" id="MemberPassword2" name="MemberPassword2" placeholder="<!--__Lang_ERRPassword2__-->">
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label for="NickName" class="col-sm-2 control-label"><!--__Lang_THMemName__--></label>
+	    <div class="col-sm-10">
+	    	<input type="text" class="form-control" id="NickName" name="NickName" placeholder="<!--__Lang_ERRNickName__-->">
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label"><!--__Lang_YourAccBalance__--></label>
+	    <div class="col-sm-10 point"><!--__points__--></div>
+	  </div>
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label" for="points"><!--__Lang_StartCredit__--></label>
+	    <div class="col-sm-10">
+			<div class="input-group">
+				<div class="input-group-addon">$</div>
+				<input type="text" autocomplete="off" max="<!--__MAXMEMMONEY__-->" class="form-control" id="points" name="points" placeholder="<!--__Lang_ERRStartCredit__-->">
+			</div>
+			<div class="calculate label label-default"></div>
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label" for="MemberCurrency"><!--__Lang_SelectCurrency__--></label>
+	    <div class="col-sm-10">
+			<select name="MemberCurrency" class="form-control required">
+				<!--__CurrencyOptions__-->
+			</select>
+	    </div>
+	  </div>
+	  <span class="hidden CurrencyRate"></span>
+	  <button type="submit" name="btnSubmit" class="hidden">Submit</button>
+	</form>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+<div class="panel panel-default">
+  <div class="panel-body">
+	<form class="form-inline" role="form">
+		<div class="form-group">
+	    	<label for="acc"><!--__Lang_MemAccount__-->：</label>
+		    <div class="input-group">
+		  		<input class="form-control" type="text" value="<!--__acc__-->" name="mem" id="mem">
+		    </div>
+		</div>
+	    <div class="form-group">
+		  	<label for="select"><!--__Lang_THAccountStatus__--></label>
+		    <select id="status" name="status" class="form-control">
+				<option value="all"><!--__Lang_GameOptionall__--></option>
+		  		<!--__statusList__-->
+		  	</select>
+	    </div>
+	    <div class="form-group">
+		  	<label for="select"><!--__Lang_DateTitle__--></label>
+		    <select id="select" name="select" class="form-control">
+		  		<!--__options__-->
+		  	</select>
+	    </div>
+	    <button type="button" class="btn btn-info dateBtn" data-string="today"><!--__Lang_DateToday__--></button>
+	    <button type="button" class="btn btn-info dateBtn" data-string="lastday"><!--__Lang_DateLastDay__--></button>
+		<button type="submit" class="btn btn-primary" style="margin-left: 10px;"><!--__Lang_SearchBtn__--></button>
+		<!--__goBackMine__-->
+	</form>
+  </div>
+</div>
+<table class="table table-bordered table-hover">
+	<thead>
+		<tr>
+			<th><!--__Lang_THLogId__--></th>
+			<th><!--__Lang_RemoteTHAccount__--></th>
+			<th><!--__Lang_THOperationTime__--></th>
+			<th><!--__Lang_RemoteTHJP__--></th>
+			<th><!--__Lang_GameTHTitle__--></th>
+			<th><!--__Lang_RemoteTHGetReward__--></th>
+			<th><!--__Lang_THAccountStatus__--></th>
+			<th><!--__Lang_THFinishTime__--></th>
+			<th><!--__Lang_Note__--></th>
+		</tr>
+	</thead>
+	<tbody>
+	<!--__tableRecords__-->
+	<!--__tableRecordsStart
+		<tr data-id="__id__">
+			<td>__id__</td>
+			<td>__MemberAccount__</td>
+			<td>__created_at__</td>
+			<td>__SpecifiedPoints__</td>
+			<td>__GameTitle__</td>
+			<td>__RemoteJPoints__</td>
+			<td>__RemoteState__</td>
+			<td>__RemoteBonusTime__</td>
+			<td>__Note__</td>
+		</tr>
+	tableRecordsEnd__-->
+	</tbody>
+</table>
+<style type="text/css">
+	.table-bordered.bg-danger > tbody > tr > td{
+		border-color: #aaa;
+	}
+</style>
+<div class="row">
+	<div class="col-sm-3">
+		<table class="table table-bordered bg-danger">
+			<tr>
+				<td class="text-center"><!--__Lang_THStatistics__--></td>
+				<td><!--__Statistics__--></td>
+			</tr>
+		</table>
+	</div>
+	<div class="col-sm-3" style="padding:8px;"><!--__Lang_RemoteTHAvailablePoints__-->：<!--__availableBonus__--></div>
+	<div class="col-sm-6" style="padding:8px;"><!--__Lang_RemoteTHMaxPoints__-->：<!--__MaxBonus__--></div>
+</div>
+<!--__paginationStart
+<ul class="pagination" style="margin: 0px;">__pagination__</ul>
+paginationEnd__-->
+<div>
+	<!--__pagination__-->
+	<div class="pages text-muted pull-right" style="padding: 6px 0;"><!--__RecordInfo__--></div>
+</div>
+<!--__notice__-->
+</script>
+</body>
+</html>

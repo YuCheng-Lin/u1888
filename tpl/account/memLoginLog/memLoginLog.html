@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<form class="form-inline" role="form">
+			<div class="form-group" style="margin: 0 10px 0 0">
+				<div class="" style="margin:0 0 10px 0">
+			    	<label for="acc"><!--__Lang_AgentAccount__-->：</label>
+				    <div class="input-group">
+				  		<input class="form-control" type="text" value="<!--__acc__-->" name="acc" id="acc">
+				    </div>
+				</div>
+				<div>
+			    	<label for="mem"><!--__Lang_MemAccount__-->：</label>
+				    <div class="input-group">
+				  		<input class="form-control" type="text" value="<!--__mem__-->" name="mem" id="mem">
+				    </div>
+				</div>
+			</div>
+			<div class="form-group" style="margin:0 10px 0 0">
+				<div style="margin:0 0 10px 0">
+					<label><!--__Lang_DateRange__-->：</label>
+					<div class="input-group">
+			    		<input type="text" name="date_timepicker_start" id="date_timepicker_start" class="form-control" data-mindate="<!--__limitDate__-->" data-maxdate="<!--__setdate_nowD_to__-->" value="<!--__start_time__-->" placeholder="<!--__Lang_DateDefault__-->" />
+			    		<div class="input-group-addon">～</div>
+			    		<input type="text" name="date_timepicker_end" id="date_timepicker_end" class="form-control" data-mindate="<!--__limitDate__-->" data-maxdate="<!--__setdate_nowD_to__-->" value="<!--__end_time__-->" />
+			    	</div>
+					<div class="btn-group">
+						<button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+							<!--__Lang_DateSelect__--><span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu">
+					  		<li><a href="javascript:;" class="setdate" data-setdatefrom="<!--__setdate_nowD_from__-->" data-setdateto="<!--__setdate_nowD_to__-->" ><!--__Lang_DateToday__--></a></li>
+					  		<li><a href="javascript:;" class="setdate" data-setdatefrom="<!--__setdate_YD_from__-->" data-setdateto="<!--__setdate_YD_to__-->" ><!--__Lang_DateLastDay__--></a></li>
+					  		<li><a href="javascript:;" class="setdate" data-setdatefrom="<!--__setdate_nowW_from__-->" data-setdateto="<!--__setdate_nowW_to__-->" ><!--__Lang_DateLastWeek__--></a></li>
+							<li><a href="javascript:;" class="setdate" data-setdatefrom="<!--__setdate_p1M_from__-->" data-setdateto="<!--__setdate_p1M_to__-->" ><!--__Lang_DateLastMonth__--></a></li>
+						</ul>
+					</div>
+				</div>
+				<div>
+			    	<label for="ip">IP：</label>
+				    <div class="input-group">
+				  		<input class="form-control" type="text" value="<!--__ip__-->" name="ip" id="ip">
+				    </div>
+				</div>
+			</div>
+			<button type="submit" class="btn btn-primary"><!--__Lang_SearchBtn__--></button>
+			<!--__goBackMine__-->
+		</form>
+	</div>
+</div>
+<ul class="breadcrumb"><!--__breadcrumb__--></ul>
+
+<table class="table table-bordered table-hover">
+	<thead>
+		<tr>
+			<th><!--__Lang_THLogId__--></th>
+			<th><!--__Lang_THMemAccount__-->/<!--__Lang_THMemName__--></th>
+			<th><!--__Lang_UpAccount__--></th>
+			<th>IP <!--__Lang_IpLocation__--></th>
+			<th><!--__Lang_LastUseTime__--></th>
+		</tr>
+	</thead>
+	<tbody>
+		<!--__tableRow__-->
+		<!--__tableRowStart
+		<tr>
+			<td>__RowId__</td>
+			<td>__MemberAccount__(__NickName__)</td>
+			<td>__upAccount__</td>
+			<td>__Ip__</td>
+			<td>__LastUseTime__</td>
+		</tr>
+		tableRowEnd__-->
+	</tbody>
+</table>
+<!--__paginationStart
+<ul class="pagination" style="margin: 0px;">__pagination__</ul>
+paginationEnd__-->
+<div>
+	<!--__pagination__-->
+	<div class="pages text-muted pull-right" style="padding: 6px 0;"><!--__betRecordInfo__--></div>
+</div>
+<!--__notice__-->
+</body>
+</html>

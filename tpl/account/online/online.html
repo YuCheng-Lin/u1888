@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<form class="form-inline" role="form">
+			<div class="form-group" style="margin: 0 10px 0 0">
+		    	<label for="acc"><!--__Lang_AgentAccount__-->：</label>
+			    <div class="input-group">
+			  		<input class="form-control" type="text" value="<!--__acc__-->" name="acc" id="acc">
+			    </div>
+			</div>
+			<div class="form-group" style="margin: 0 10px 0 0">
+		    	<label for="mem"><!--__Lang_MemAccount__-->：</label>
+			    <div class="input-group">
+			  		<input class="form-control" type="text" value="<!--__mem__-->" name="mem" id="mem">
+			    </div>
+			</div>
+			<div class="form-group" style="margin:0 10px 0 0">
+		    	<label for="ip">IP：</label>
+			    <div class="input-group">
+			  		<input class="form-control" type="text" value="<!--__ip__-->" name="ip" id="ip">
+			    </div>
+			</div>
+			<button type="submit" class="btn btn-primary"><!--__Lang_SearchBtn__--></button>
+			<!--__goBackMine__-->
+		</form>
+	</div>
+</div>
+<div class="bs-component">
+	<ul class="nav nav-pills">
+		<li><a href="javascript:;"><!--__Lang_THOnlineCounts__--> <span class="badge"><!--__online__--></span></a></li>
+		<li><a href="javascript:;"><!--__Lang_THLobbyCounts__--> <span class="badge"><!--__lobby__--></span></a></li>
+		<li><a href="javascript:;"><!--__Lang_THPlayingCounts__--> <span class="badge"><!--__playing__--></span></a></li>
+	</ul>
+</div>
+<ul class="breadcrumb"><!--__breadcrumb__--></ul>
+<table class="table table-bordered table-hover">
+	<thead>
+		<tr>
+			<th><!--__Lang_THMemAccount__-->/<!--__Lang_THMemName__--></th>
+			<th><!--__Lang_UpAccount__--></th>
+			<th><!--__Lang_THLastLoginIp__--></th>
+			<th><!--__Lang_THLastLoginDate__--></th>
+			<th><!--__Lang_ApplyTHBalance__--></th>
+			<th><!--__Lang_THNowGame__--></th>
+			<th><!--__Lang_THThisWeekWinlose__--></th>
+		</tr>
+	</thead>
+	<tbody>
+		<!--__tableRow__-->
+		<!--__tableRowStart
+		<tr>
+			<td>__MemberAccount__(__NickName__)</td>
+			<td>__upAccount__</td>
+			<td>__Ip__</td>
+			<td>__LastUseTime__</td>
+			<td>__Points__</td>
+			<td>__GameTitle__</td>
+			<td>__thisWeekWinlose__</td>
+		</tr>
+		tableRowEnd__-->
+	</tbody>
+</table>
+<!--__paginationStart
+<ul class="pagination" style="margin: 0px;">__pagination__</ul>
+paginationEnd__-->
+<div>
+	<!--__pagination__-->
+	<div class="pages text-muted pull-right" style="padding: 6px 0;"><!--__betRecordInfo__--></div>
+</div>
+<!--__notice__-->
+</body>
+</html>

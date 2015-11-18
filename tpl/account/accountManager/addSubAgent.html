@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>后端管理系统</title>
+</head>
+<body>
+	<form id="dataForm" action="request.php" class="form-horizontal" role="form" method="post">
+	  <div class="form-group">
+	    <label for="admin_acc" class="col-sm-2 control-label"><!--__Lang_LoginAccount__--></label>
+	    <div class="col-sm-10">
+	    	<input type="text" class="form-control" id="admin_acc" name="admin_acc" placeholder="<!--__Lang_ERRAccount__-->">
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label for="admin_pwd" class="col-sm-2 control-label"><!--__Lang_LoginPassword__--></label>
+	    <div class="col-sm-10">
+	    	<input type="password" class="form-control" id="admin_pwd" name="admin_pwd" placeholder="<!--__Lang_ERRPassword__-->">
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label for="admin_pwd2" class="col-sm-2 control-label"><!--__Lang_ConfirmPassword__--></label>
+	    <div class="col-sm-10">
+	    	<input type="password" class="form-control" id="admin_pwd2" name="admin_pwd2" placeholder="<!--__Lang_ERRPassword2__-->">
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label for="admin_name" class="col-sm-2 control-label"><!--__Lang_THMemName__--></label>
+	    <div class="col-sm-10">
+	    	<input type="text" class="form-control" id="admin_name" name="admin_name" placeholder="<!--__Lang_ERRNickName__-->">
+	    </div>
+	  </div>
+	  <button type="submit" name="btnSubmit" class="hidden">Submit</button>
+	</form>
+</body>
+</html>

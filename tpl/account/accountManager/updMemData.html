@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>后端管理系统</title>
+</head>
+<body>
+	<form id="dataForm" action="request.php" class="form-horizontal" role="form" method="post">
+	  <div class="form-group">
+	    <label for="MemberAccount" class="col-sm-2 control-label"><!--__Lang_LoginAccount__--></label>
+	    <div class="col-sm-10"><!--__MemberAccount__--></div>
+	  </div>
+	  <div class="form-group">
+	    <label for="MemberPassword" class="col-sm-2 control-label"><!--__Lang_LoginPassword__--></label>
+	    <div class="col-sm-10">
+	    	<input style="display:none;" type="password" class="form-control" id="MemberPassword" name="MemberPassword" placeholder="<!--__Lang_ERRPassword__-->">
+	    	<button type="button" class="btn btn-primary updPwdBtn"><!--__Lang_UpdatePwdBtn__--></button>
+	    </div>
+	  </div>
+	  <div class="form-group" style="display:none;">
+	    <label for="MemberPassword2" class="col-sm-2 control-label"><!--__Lang_ConfirmPassword__--></label>
+	    <div class="col-sm-10">
+	    	<input type="password" class="form-control" id="MemberPassword2" name="MemberPassword2" placeholder="<!--__Lang_ERRPassword2__-->">
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label for="NickName" class="col-sm-2 control-label"><!--__Lang_THMemName__--></label>
+	    <div class="col-sm-10">
+	    	<input type="text" value="<!--__NickName__-->" class="form-control" id="NickName" name="NickName" placeholder="<!--__Lang_ERRNickName__-->">
+	    </div>
+	  </div>
+	  <!--__ReturnRateTemp__-->
+	  <!--__ReturnRateStart
+	  ReturnRateEnd__-->
+	  <!--__OnlyReturnRateStart
+	  OnlyReturnRateEnd__-->
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label"><!--__Lang_THAccountBalance__--></label>
+	    <div class="col-sm-10"><!--__Points__--></div>
+	  </div>
+	  <div class="form-group">
+	    <label class="col-sm-2 control-label"><!--__Lang_THCurrencyTitle__--></label>
+	    <div class="col-sm-10"><!--__title__-->(<!--__MemberCurrency__-->)</div>
+	  </div>
+	  <button type="submit" name="btnSubmit" class="hidden">Submit</button>
+	</form>
+</body>
+</html>

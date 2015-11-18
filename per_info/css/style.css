@@ -1,0 +1,7 @@
+form div.form-group{
+	margin-bottom: 0;
+}
+form div.form-group div.col-xs-4{
+	padding-left: 0;
+	padding-right: 0;
+}

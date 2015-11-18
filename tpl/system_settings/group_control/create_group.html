@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>幸运星后端管理系统</title>
+	
+    <link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
+	<link rel="Stylesheet" type="text/css" href="/css/smoothness/jquery-ui-1.8.7.custom.css"  />	
+	<!--[if IE 7]><link rel="stylesheet" href="/css/ie.css" type="text/css" media="screen, projection" /><![endif]-->
+	<!--[if IE 6]><link rel="stylesheet" href="/css/ie6.css" type="text/css" media="screen, projection" /><![endif]-->
+	<!-- JavaScript -->
+    <script type="text/javascript" src="/js/jquery-1.4.4.min.js"> </script>
+	<script type="text/javascript" src="/js/jquery-ui-1.8.7.custom.min.js"> </script>
+	<script type="text/javascript" src="/js/superfish.js"> </script>
+  	<script type="text/javascript" src="/js/custom.js"> </script>
+
+</head>
+<body>
+	
+	<form action="/system_settings/group_control/group_request.php" method="post" id="adminForm">
+		
+		<!--__updateControl__-->
+		
+		<table class="table" style="width:600px;">
+				<thead>
+				<tr>
+					<th>项目</th>
+					<th style="width:80%;">内容</th>
+				</tr>
+				</thead>
+				<tbody>
+					
+					<tr>
+						<td>群组名称</td>
+						<td class="star">
+							<input class="text-input validate[required]" name="ag_title" id="ag_title" type="text" value="<!--__ag_title__-->" size="50" />
+						</td>
+					</tr>
+					<tr>
+						<td>系统权限</td>
+						<td class="star"><!--__admin_power__--></td>
+					</tr>
+					
+				</tbody>
+				
+			</table>
+		</form>
+	
+</body>
+</html>

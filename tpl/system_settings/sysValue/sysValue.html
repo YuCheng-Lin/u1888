@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+	<table class="table table-bordered table-hover">
+		<thead>
+			<tr>
+				<th><!--__Lang_THItem__--></th>
+				<th style="width:60%;"><!--__Lang_THContent__--></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><!--__Lang_THRateSwitch__--></td>
+				<td><!--__RateSettingSwitchName__-->
+					<form class="" action="request.php" method="post" style="display:inline;margin-left:5px;">
+						<button class="btn btn-xs btn-warning" type="submit" value="<!--__RateSettingSwitch__-->" name="RateSettingSwitch" onClick="if(confirm('確定執行？')){$(this).parent().submit();}else{return false;}">Switch</button>
+						<input class="hidden" name="action" value="RateSwitchChange" />
+					</form>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

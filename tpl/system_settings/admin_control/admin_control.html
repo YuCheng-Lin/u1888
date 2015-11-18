@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>幸运星后端管理系统</title>
+	
+    <link rel="stylesheet" type="text/css" media="all" href="/css/style.css" />
+	<link rel="Stylesheet" type="text/css" href="/css/smoothness/jquery-ui-1.8.7.custom.css"  />	
+	<!--[if IE 7]><link rel="stylesheet" href="/css/ie.css" type="text/css" media="screen, projection" /><![endif]-->
+	<!--[if IE 6]><link rel="stylesheet" href="/css/ie6.css" type="text/css" media="screen, projection" /><![endif]-->
+	<!-- JavaScript -->
+    <script type="text/javascript" src="/js/jquery-1.4.4.min.js"> </script>
+	<script type="text/javascript" src="/js/jquery-ui-1.8.7.custom.min.js"> </script>
+	<script type="text/javascript" src="/js/superfish.js"> </script>
+  	<script type="text/javascript" src="/js/custom.js"> </script>
+
+</head>
+<body>
+		<div class="tabledata section">
+		<div class="ico_mug" style="padding-bottom:8px;text-align:right;">
+			<h2 style="float:left;"><!--__pageName__--></h2>
+			<!--__createAdmin__-->
+		</div>
+		
+		<form action="" method="get" class="searchForm" >
+				搜寻：<input type="text" name="searchKeyword" class="text-input medium-input" value="" />
+				<input type="submit" class="button" value="搜寻" />
+		</form>
+		
+		<table class="table">
+			<thead>
+			<tr>
+				<th>在线</th>
+				<th>编列群组</th>
+				<th>职称</th>
+				<th>帐号</th>
+				<th>姓名</th>
+				<th>信箱</th>
+				<th>电话</th>
+				<th>启用</th>
+				<th style="width:60px;">编辑</th>
+			</tr>
+			</thead>
+			<tbody>
+			
+			<!--__tableContent__-->
+			
+			<!--__tableData_Start
+			<tr aid="__admin_id__">
+				<td class="s_id">__s_id__</td>
+				<td class="a_group">__ag_title__</td>
+				<td class="a_title">__admin_title__</td>
+				<td class="a_account">__admin_acc__</td>
+				<td class="a_name">__admin_name__</td>
+				<td class="a_mail">__admin_mail__</td>
+				<td class="a_phone">__admin_phone__</td>
+				<td class="a_enable">
+					__admin_enable__
+				</td>
+                <td>
+                    __admin_edit__
+                </td>
+			</tr>
+			tableData_End__-->
+			
+			</tbody>
+			
+		</table>
+			<!--__notice__-->
+			<div class="pagination">
+				<div style="float:left;">
+					<img style="margin-left:5px;" title="启用" alt="启用" src="/img/accpet.png" />启用
+					<img style="margin-left:5px;" title="停用" alt="停用" src="/img/cross_circle.png" />停用
+					<img style="margin-left:5px;" title="检视" alt="检视" src="/img/view.png" />检视
+					<img style="margin-left:5px;" title="修改" alt="修改" src="/img/hammer_screwdriver.png" />修改
+					<img style="margin-left:5px;" title="删除" alt="删除" src="/img/cross.png" />删除
+				</div>
+				&nbsp;
+				<!--__record__-->
+				<!--__pagination__-->
+			</div>
+		</div> <!-- end #tabledata -->
+		
+</body>
+
+</html>

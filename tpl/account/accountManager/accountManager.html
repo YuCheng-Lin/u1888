@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+<div class="panel panel-default">
+  <div class="panel-body">
+	<form class="form-inline" role="form">
+	  <div class="form-group">
+	    <label for="account"><!--__Lang_AgentAccount__-->：</label>
+	    <div class="input-group">
+	    	<input type="text" name="acc" value="<!--__accSearch__-->" class="form-control" id="acc" placeholder="<!--__Lang_PHAccount__-->">
+	    </div>
+	  </div>
+	  <div class="form-group">
+	    <label for="account"><!--__Lang_MemAccount__-->：</label>
+	    <div class="input-group">
+	    	<input type="text" name="mem" value="<!--__memSearch__-->" class="form-control" id="mem" placeholder="<!--__Lang_PHAccount__-->">
+	    </div>
+	  </div>
+	  <button type="submit" class="btn btn-default"><!--__Lang_SearchBtn__--></button>
+	  <span class="text-danger"> ---<!--__Lang_JustOneSearch__-->--</span>
+	  <!--__goBackMine__-->
+	</form>
+  </div>
+</div>
+<ul class="breadcrumb"><!--__breadcrumb__--></ul>
+
+<table class="table table-bordered table-hover">
+	<thead>
+		<tr>
+			<th><!--__Lang_THMemAccount__-->/<!--__Lang_THMemName__--></th>
+			<th><!--__Lang_THBelongGroup__--></th>
+			<th><!--__Lang_THAccountBalance__--></th>
+			<th><!--__Lang_THCommissionRate__--></th>
+			<th><!--__Lang_THAgentTotal__--></th>
+			<th><!--__Lang_THMemTotal__--></th>
+			<th><!--__Lang_THRegisterTime__--></th>
+			<th><!--__Lang_THLastLoginDate__--></th>
+			<th><!--__Lang_THLastLoginIp__--></th>
+			<th><!--__Lang_THAccountStatus__--></th>
+			<th><!--__Lang_THOperation__--></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr data-id="<!--__admin_id__-->">
+			<td class="text-center"><!--__admin_acc__--><br />(<!--__admin_name__-->)</td>
+			<td><!--__ag_title__--></td>
+			<td><!--__points__--></td>
+			<td><!--__commissionRate__--> %</td>
+			<td><!--__downCount__--></td>
+			<td><!--__downMemCount__--></td>
+			<td><!--__admin_addtime__--></td>
+			<td><!--__admin_last_login_time__--></td>
+			<td><!--__last_login_ip__--></td>
+			<td><!--__admin_enable__--></td>
+			<td><!--__adminUpdBtn__--></td>
+		</tr>
+	</tbody>
+</table>
+<!--__notice__-->
+<!--__enableOKStart<span aria-hidden="true" class="glyphicon glyphicon-ok text-success"></span>enableOKEnd__-->
+<!--__enableNOStart<span aria-hidden="true" class="glyphicon glyphicon-remove text-danger"></span>enableNOEnd__-->
+<!--__enableNOTipStart<span aria-hidden="true" class="glyphicon glyphicon-remove text-danger" title="__note__" data-placement="top" data-toggle="tooltip"></span>enableNOTipEnd__-->
+<!--__agentTemp__-->
+<!--__memTemp__-->
+</body>
+</html>

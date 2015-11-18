@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><!--__Lang_Title__--></title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<!--__favicon__-->
+<!--[if IE]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen, projection" /><![endif]-->
+<link rel="stylesheet" type="text/css" media="all" href="/css/bootstrap.css" />
+<!--[if IE]>
+	<style type="text/css">
+	  .clearfix {
+	    zoom: 1;     /* triggers hasLayout */
+	    display: block;     /* resets display for IE/Win */
+	    }  /* Only IE can see inside the conditional comment
+	    and read this CSS rule. Don't ever use a normal HTML
+	    comment inside the CC or it will close prematurely. */
+	</style>
+<![endif]-->
+<style>
+	body {
+	  padding-top: 40px;
+	  padding-bottom: 40px;
+	  background-color: #eee;
+	}
+	
+	.form-signin {
+	  max-width: 340px;
+	  padding: 15px;
+	  margin: 0 auto;
+	}
+	.form-signin .form-signin-heading,
+	.form-signin .checkbox {
+	  margin-bottom: 10px;
+	}
+	.form-signin .checkbox {
+	  font-weight: normal;
+	}
+	.form-signin .form-control {
+	  position: relative;
+	  height: auto;
+	  -webkit-box-sizing: border-box;
+	     -moz-box-sizing: border-box;
+	          box-sizing: border-box;
+	  padding: 10px;
+	  font-size: 16px;
+	}
+	.form-signin .form-control:focus {
+	  z-index: 2;
+	}
+	.form-signin input[type="email"] {
+	  margin-bottom: -1px;
+	  border-bottom-right-radius: 0;
+	  border-bottom-left-radius: 0;
+	}
+	.form-signin input[type="password"] {
+	  margin-bottom: 10px;
+	  border-top-left-radius: 0;
+	  border-top-right-radius: 0;
+	}
+</style>
+</head>
+<body>
+<div class="container">
+    <form role="form" method="post" action="verify.php" class="form-signin">
+		<h2 class="form-signin-heading text-center"><!--__Lang_Title__--></h2>
+		<!--__warning__-->
+		<input type="text" value="" autofocus="" name="acc" required="" placeholder="<!--__Lang_PH_ACC__-->" class="form-control">
+		<input type="password" required="" name="pwd" placeholder="<!--__Lang_PH_PWD__-->" class="form-control">
+		<button type="submit" class="btn btn-primary btn-block"><!--__Lang_LogInBtn__--></button>
+	</form>
+	<form role="form" method="post" action="/langChange.php" class="form-signin">
+	    <select id="lang" name="lang" onChange="$(this).parent().submit()" class="form-control input-sm">
+	    	<option value="zh"<!--__LangSelected_zh__-->>中文</option>
+	    	<option value="en"<!--__LangSelected_en__-->>English</option>
+	    </select>
+	</form>
+</div><!-- end container -->
+<!-- JavaScript -->
+<script type="text/javascript" src="/js_v2/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/js_v2/bootstrap.js"> </script>
+<script type="text/javascript">
+	;$(function(){$("#acc").focus();});
+</script>
+</body>
+</html>

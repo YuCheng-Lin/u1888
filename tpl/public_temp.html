@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title><!--__Lang_Title__--></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--__favicon__-->
+<link rel="stylesheet" type="text/css" media="all" href="/js_v2/jquery-datetimepicker/jquery.datetimepicker.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/js_v2/dataTables/dataTables.bootstrap.css" />
+<link rel="stylesheet" type="text/css" media="all" href="/css/style_v2.css" />
+<!--__cssImport__-->
+</head>
+<body>
+	<div class="container" id="container">
+		<!--Header-->
+		<div class="navbar navbar-default">
+		  <div class="navbar-header">
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		      <span class="icon-bar"></span>
+		    </button>
+		    <a class="navbar-brand" href="/per_info/per_info.php"><!--__Lang_Title__--></a>
+		  </div>
+		  <div class="navbar-collapse collapse navbar-responsive-collapse">
+		  <!--__mainNav__-->
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">Welcome  <!--__adminName__--> <b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<!--__perInfoMenu__-->
+						<li class ="divider"></li>
+						<li><!--__logOutBtn__--></li>
+					</ul>
+				</li>
+			</ul>
+			<form role="form" method="post" action="/langChange.php" class="form-inline pull-right" style="margin-top: 5px;">
+			    <select id="lang" name="lang" onchange="$(this).parent().submit()" class="form-control input-sm">
+					<option value="zh"<!--__LangSelected_zh__-->>中文</option>
+					<option value="en"<!--__LangSelected_en__-->>English</option>
+			    </select>
+			</form>
+			<!--__EmergencyBtn__-->
+		  </div>
+		</div>
+    	<!--__updateBrowser__-->
+	    <div id="content" class="row-fluid" >
+			<div class="section">
+				<div class="ico_mug">
+					<h2><!--__pageName__--></h2><!--__updateAdmin__-->
+				</div>
+				<!--__MainContent__-->
+			</div> <!-- end #tabledata -->
+	    </div>
+	    <!--Footer-->
+	</div>
+	<div class="modal fade" id="dialogModal" tabindex="-1" role="dialog" aria-labelledby="dialogModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	        <h4 class="modal-title" id="dialogModalLabel">Modal</h4>
+	      </div>
+	      <div class="modal-body">
+	        <div class="alert alert-warning text-center">No Data</div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal"><!--__Lang_CancelBtn__--></button>
+	        <button type="button" class="btn btn-primary formSubmit"><!--__Lang_ConfirmBtn__--></button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+<script type="text/javascript" src="/js_v2/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/js_v2/bootstrap.js"> </script>
+<script type="text/javascript" src="/js_v2/jquery-validation-1.13.1/jquery.validate.js"> </script>
+<!--__Lang_ValidateMsgSrc__-->
+<script type="text/javascript" src="/js_v2/jquery-datetimepicker/jquery.datetimepicker.js"> </script>
+<script type="text/javascript" src="/js_v2/dataTables/js/jquery.dataTables.min.js"> </script>
+<script type="text/javascript" src="/js_v2/dataTables/jquery.dataTables_bootstrap.js"> </script>
+<script type="text/javascript" src="/js_v2/init.js"> </script>
+<script type="text/javascript">
+	$(function(){
+		$('[data-toggle="tooltip"]').tooltip();
+		if($('[data-toggle="datatable"]').length > 0){
+			$('[data-toggle="datatable"]').DataTable({
+				"language": {
+		            "lengthMenu": "<!--__Lang_DataTablePerPageDisplay__-->",
+		            "zeroRecords": "--",
+		            "info": "<!--__Lang_DataTableRecordInfoStyle__-->",
+		            "infoEmpty": "--",
+		            "sSearch": "<!--__Lang_SearchBtn__-->："
+		        }
+			});
+		}
+	});
+</script>
+<!-- JavaScript -->
+<!--__javascriptImport__-->
+<!--__SysJavascriptImport__-->
+</body>
+</html>

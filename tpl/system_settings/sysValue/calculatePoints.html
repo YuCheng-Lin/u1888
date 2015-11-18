@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>后端管理系统</title>
+</head>
+<body>
+	<form id="dataForm" action="request.php" class="form-horizontal" role="form" method="post">
+	  	<div class="form-group">
+		  	<div class="col-sm-2 control-label"><label for="select"><!--__Lang_DateTitle__--></label></div>
+		    <div class="col-sm-8">
+	    		<select id="select" name="select" class="form-control col-sm-10">
+	    			<!--__options__-->
+	    		</select>
+		    </div>
+		    <div class="col-sm-2">
+		    	<button type="button" class="btn btn-danger calBtn" data-fn="calculateWinLose">計算</button>
+		    </div>
+	    </div>
+		<button type="submit" name="btnSubmit" class="hidden">Submit</button>
+	</form>
+</body>
+</html>

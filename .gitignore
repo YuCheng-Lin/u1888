@@ -1,0 +1,9 @@
+*.[oa]
+*~
+.settings/*
+.buildpath
+.project
+.DS_Store
+._.DS_Store
+class/pdo-4-you
+class/pdo-multicnxn

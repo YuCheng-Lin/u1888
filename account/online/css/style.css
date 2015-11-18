@@ -1,0 +1,13 @@
+.panel.panel-default {
+    margin: 0;
+}
+.nav.nav-pills a {
+    cursor: default;
+}
+.breadcrumb{
+	text-transform: none;
+	font-size: 12px;
+}
+form.form-inline{
+	margin-bottom: 0;
+}
